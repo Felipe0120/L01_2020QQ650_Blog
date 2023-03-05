@@ -9,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-builder.Services.AddDbContext<blogContex>(Options =>
+builder.Services.AddDbContext<blogC>(Options =>
 Options.UseSqlServer(
     builder.Configuration.GetConnectionString("blogDbConnection"))
     );
